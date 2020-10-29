@@ -25,7 +25,9 @@ public class GreeterTest {
 
   @Test
   public void testGreetingIncludesSomethingExceptTheOneWhoIsBeingGreeted() {
+    String name1 = "Lars";
     String name = "Lars";
     assertThat(greeter.greet(name).length(), is(greaterThan(name.length())));
   }
+
 }
